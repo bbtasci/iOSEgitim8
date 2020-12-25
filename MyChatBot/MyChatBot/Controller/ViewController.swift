@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+final class ViewController: UIViewController {
     
     var messages: [MessageData] = []
     var isRightButtonClicked: Bool = false
@@ -39,7 +39,7 @@ final class ViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         messagesTableView.reloadData()
     }
-
+    
     // MARK: - ACTIONS
     @IBAction func leftSendButtonTouched(_ sender: Any) {
         guard let leftTextFromField = leftMessageTextfield.text else {return}
@@ -63,11 +63,10 @@ final class ViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+}
+
     // MARK: - TABLEVIEWDATASOURCE METHODS
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return messages.count
-    }
-    
+extension ViewController: UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         1
     }
@@ -76,6 +75,9 @@ final class ViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return UITableView.automaticDimension
     }
     
+}
+
+extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if messages[indexPath.row].isRight {
@@ -88,5 +90,8 @@ final class ViewController: UIViewController, UITableViewDelegate, UITableViewDa
             return leftCell
         }
     }
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return messages.count
+    }
+    
 }
