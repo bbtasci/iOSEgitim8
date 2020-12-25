@@ -5,6 +5,6 @@
 //  Created by Baris Berkin Tasci on 24.12.2020.
 //
 
-struct RightMessageData {
+struct MessageData {
     let text: String
 }

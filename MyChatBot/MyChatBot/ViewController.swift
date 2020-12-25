@@ -9,7 +9,7 @@ import UIKit
 
 final class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var rightMessages: [RightMessageData] = []
+    var rightMessages: [MessageData] = []
     
     // MARK: - OUTLETS
     
@@ -23,7 +23,7 @@ final class ViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // MARK: - LIFE CYCLE METHODS
     override func viewDidLoad() {
         super.viewDidLoad()
-        prepareTitleLabel()
+        //prepareTitleLabel()
         prepareMessagesTableView()
         //rightMessageTextfield.text = nil
     }
@@ -38,8 +38,8 @@ final class ViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func prepareTitleLabel() {
-        titleLabel.layer.backgroundColor = UIColor.systemGray4.cgColor
-        titleLabel.textColor = UIColor.systemBlue
+        //titleLabel.layer.backgroundColor = UIColor.systemGray4.cgColor
+        //titleLabel.textColor = UIColor.systemBlue
         
     }
     
@@ -50,7 +50,7 @@ final class ViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBAction func rightSendButtonTouched(_ sender: Any) {
         guard let rightTextFromField = rightMessageTextfield.text else {return}
         if rightTextFromField != "" {
-            rightMessages.append(RightMessageData(text: rightTextFromField))
+            rightMessages.append(MessageData(text: rightTextFromField))
             //messagesTableView.beginUpdates()
             messagesTableView.insertRows(at: [IndexPath.init(row: rightMessages.count - 1, section: 0)], with: .fade)
             //messagesTableView.endUpdates()

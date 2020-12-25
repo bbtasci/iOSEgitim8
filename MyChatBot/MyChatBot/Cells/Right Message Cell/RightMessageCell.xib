@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -23,11 +22,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tB5-tq-GNo">
                                 <rect key="frame" x="15" y="6" width="5" height="16"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <color key="textColor" red="0.90521615740000005" green="0.92540532350000004" blue="0.93784707779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.95715409517288208" green="1" blue="0.0031111717689782381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.21224331860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tB5-tq-GNo" firstAttribute="leading" secondItem="m9g-q0-bze" secondAttribute="leading" constant="15" id="2fn-mI-pJs"/>
                             <constraint firstAttribute="trailing" secondItem="tB5-tq-GNo" secondAttribute="trailing" constant="15" id="Nl3-yN-fuJ"/>
@@ -41,7 +40,7 @@
                     <constraint firstItem="m9g-q0-bze" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="3aW-ed-0jx"/>
                     <constraint firstAttribute="bottom" secondItem="m9g-q0-bze" secondAttribute="bottom" constant="8" id="Cgb-1f-OcE"/>
                     <constraint firstItem="m9g-q0-bze" firstAttribute="width" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.7" id="UHn-DM-aA7"/>
-                    <constraint firstAttribute="trailing" secondItem="m9g-q0-bze" secondAttribute="trailing" constant="15" placeholder="YES" id="suf-aT-6u2"/>
+                    <constraint firstAttribute="trailing" secondItem="m9g-q0-bze" secondAttribute="trailing" constant="15" id="suf-aT-6u2"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -52,9 +51,4 @@
             <point key="canvasLocation" x="131.8840579710145" y="85.714285714285708"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

@@ -21,8 +21,9 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY CHAT BOT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxW-nX-dGw">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <color key="backgroundColor" red="0.95715409517288208" green="1" blue="0.0031111717689782381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.21224331860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -47,7 +48,10 @@
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW3-Rg-lRA">
                                                 <rect key="frame" x="153.5" y="0.0" width="48.5" height="34"/>
-                                                <state key="normal" title="Send"/>
+                                                <color key="backgroundColor" red="0.95715409517288208" green="1" blue="0.0031111717689782381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Send">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.21224331860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="leftSendButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u11-kL-tqK"/>
                                                 </connections>
@@ -69,7 +73,10 @@
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsN-hO-hPl">
                                                 <rect key="frame" x="153.5" y="0.0" width="48.5" height="34"/>
-                                                <state key="normal" title="Send"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.21224331860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Send">
+                                                    <color key="titleColor" red="0.95715409517288208" green="1" blue="0.0031111717689782381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="rightSendButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="790-YV-zN0"/>
                                                 </connections>

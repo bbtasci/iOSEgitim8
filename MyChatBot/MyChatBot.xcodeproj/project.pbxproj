@@ -9,18 +9,22 @@
 /* Begin PBXBuildFile section */
 		4A18AEFD259548E0008F5ED7 /* RightMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A18AEFB259548E0008F5ED7 /* RightMessageCell.swift */; };
 		4A18AEFE259548E0008F5ED7 /* RightMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A18AEFC259548E0008F5ED7 /* RightMessageCell.xib */; };
+		4A54CC8825957323006DAA19 /* LeftMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A54CC8625957323006DAA19 /* LeftMessageCell.swift */; };
+		4A54CC8925957323006DAA19 /* LeftMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A54CC8725957323006DAA19 /* LeftMessageCell.xib */; };
 		4A68283A2595052C00C03151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6828392595052C00C03151 /* AppDelegate.swift */; };
 		4A68283C2595052C00C03151 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A68283B2595052C00C03151 /* SceneDelegate.swift */; };
 		4A68283E2595052C00C03151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A68283D2595052C00C03151 /* ViewController.swift */; };
 		4A6828412595052C00C03151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A68283F2595052C00C03151 /* Main.storyboard */; };
 		4A6828432595052D00C03151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6828422595052D00C03151 /* Assets.xcassets */; };
 		4A6828462595052D00C03151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6828442595052D00C03151 /* LaunchScreen.storyboard */; };
-		4A68285125952E7F00C03151 /* RightMessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A68285025952E7F00C03151 /* RightMessageData.swift */; };
+		4A68285125952E7F00C03151 /* MessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A68285025952E7F00C03151 /* MessageData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A18AEFB259548E0008F5ED7 /* RightMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMessageCell.swift; sourceTree = "<group>"; };
 		4A18AEFC259548E0008F5ED7 /* RightMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightMessageCell.xib; sourceTree = "<group>"; };
+		4A54CC8625957323006DAA19 /* LeftMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMessageCell.swift; sourceTree = "<group>"; };
+		4A54CC8725957323006DAA19 /* LeftMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftMessageCell.xib; sourceTree = "<group>"; };
 		4A6828362595052C00C03151 /* MyChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6828392595052C00C03151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A68283B2595052C00C03151 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +33,7 @@
 		4A6828422595052D00C03151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A6828452595052D00C03151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A6828472595052D00C03151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A68285025952E7F00C03151 /* RightMessageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMessageData.swift; sourceTree = "<group>"; };
+		4A68285025952E7F00C03151 /* MessageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A54CC8B2595732C006DAA19 /* Left Message Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4A54CC8625957323006DAA19 /* LeftMessageCell.swift */,
+				4A54CC8725957323006DAA19 /* LeftMessageCell.xib */,
+			);
+			path = "Left Message Cell";
+			sourceTree = "<group>";
+		};
+		4A54CC8C25957337006DAA19 /* Right Message Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4A18AEFB259548E0008F5ED7 /* RightMessageCell.swift */,
+				4A18AEFC259548E0008F5ED7 /* RightMessageCell.xib */,
+			);
+			path = "Right Message Cell";
+			sourceTree = "<group>";
+		};
 		4A68282D2595052C00C03151 = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +100,8 @@
 		4A92086025956D9B0061C99F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				4A18AEFB259548E0008F5ED7 /* RightMessageCell.swift */,
-				4A18AEFC259548E0008F5ED7 /* RightMessageCell.xib */,
+				4A54CC8C25957337006DAA19 /* Right Message Cell */,
+				4A54CC8B2595732C006DAA19 /* Left Message Cell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -87,7 +109,7 @@
 		4A92086125956DA10061C99F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4A68285025952E7F00C03151 /* RightMessageData.swift */,
+				4A68285025952E7F00C03151 /* MessageData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -149,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A54CC8925957323006DAA19 /* LeftMessageCell.xib in Resources */,
 				4A18AEFE259548E0008F5ED7 /* RightMessageCell.xib in Resources */,
 				4A6828462595052D00C03151 /* LaunchScreen.storyboard in Resources */,
 				4A6828432595052D00C03151 /* Assets.xcassets in Resources */,
@@ -165,8 +188,9 @@
 			files = (
 				4A68283E2595052C00C03151 /* ViewController.swift in Sources */,
 				4A18AEFD259548E0008F5ED7 /* RightMessageCell.swift in Sources */,
+				4A54CC8825957323006DAA19 /* LeftMessageCell.swift in Sources */,
 				4A68283A2595052C00C03151 /* AppDelegate.swift in Sources */,
-				4A68285125952E7F00C03151 /* RightMessageData.swift in Sources */,
+				4A68285125952E7F00C03151 /* MessageData.swift in Sources */,
 				4A68283C2595052C00C03151 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

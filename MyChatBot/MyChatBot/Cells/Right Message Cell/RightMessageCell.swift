@@ -23,12 +23,11 @@ final class RightMessageCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func updateRightMessageCell (by message: RightMessageData) {
+    func updateRightMessageCell (by message: MessageData) {
         rightMessageBackgroundView.layer.cornerRadius = 10
         rightMessageBackgroundView.clipsToBounds = true
-        
         rightMessageLabel.text = message.text
-        rightMessageLabel.textAlignment = .right
+        rightMessageLabel.textAlignment = .center
     }
     
 }
