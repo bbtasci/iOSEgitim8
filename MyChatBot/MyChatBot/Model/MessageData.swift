@@ -7,4 +7,5 @@
 
 struct MessageData {
     let text: String
+    let isRight: Bool
 }

@@ -84,11 +84,11 @@
 		4A6828382595052C00C03151 /* MyChatBot */ = {
 			isa = PBXGroup;
 			children = (
-				4A92086125956DA10061C99F /* Models */,
+				4AE123D9259584BD00D2AD40 /* Controller */,
+				4A92086125956DA10061C99F /* Model */,
 				4A92086025956D9B0061C99F /* Cells */,
 				4A6828392595052C00C03151 /* AppDelegate.swift */,
 				4A68283B2595052C00C03151 /* SceneDelegate.swift */,
-				4A68283D2595052C00C03151 /* ViewController.swift */,
 				4A68283F2595052C00C03151 /* Main.storyboard */,
 				4A6828422595052D00C03151 /* Assets.xcassets */,
 				4A6828442595052D00C03151 /* LaunchScreen.storyboard */,
@@ -106,12 +106,20 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		4A92086125956DA10061C99F /* Models */ = {
+		4A92086125956DA10061C99F /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				4A68285025952E7F00C03151 /* MessageData.swift */,
 			);
-			path = Models;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4AE123D9259584BD00D2AD40 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A68283D2595052C00C03151 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

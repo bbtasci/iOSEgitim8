@@ -7,11 +7,11 @@
 
 import UIKit
 
-class LeftMessageCell: UITableViewCell {
+final class LeftMessageCell: UITableViewCell {
     
-    @IBOutlet weak var leftMessageLabel: UILabel!
+    @IBOutlet fileprivate weak var leftMessageLabel: UILabel!
     
-    @IBOutlet weak var leftMessageBackgroundView: UIView!
+    @IBOutlet fileprivate weak var leftMessageBackgroundView: UIView!
     
     
     override func awakeFromNib() {
@@ -25,11 +25,10 @@ class LeftMessageCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func updaLeftMessageCell (by message: MessageData) {
+    func updateLeftMessageCell (by message: MessageData) {
         leftMessageBackgroundView.layer.cornerRadius = 10
         leftMessageBackgroundView.clipsToBounds = true
         leftMessageLabel.text = message.text
-        leftMessageLabel.textAlignment = .center
     }
     
 }

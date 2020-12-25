@@ -9,8 +9,8 @@ import UIKit
 
 final class RightMessageCell: UITableViewCell {
     
-    @IBOutlet weak var rightMessageBackgroundView: UIView!
-    @IBOutlet weak var rightMessageLabel: UILabel!
+    @IBOutlet fileprivate weak var rightMessageBackgroundView: UIView!
+    @IBOutlet fileprivate weak var rightMessageLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,7 +27,6 @@ final class RightMessageCell: UITableViewCell {
         rightMessageBackgroundView.layer.cornerRadius = 10
         rightMessageBackgroundView.clipsToBounds = true
         rightMessageLabel.text = message.text
-        rightMessageLabel.textAlignment = .center
     }
     
 }
